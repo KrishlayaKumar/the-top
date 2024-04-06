@@ -1,0 +1,216 @@
+*{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+.container{
+    width:100%;
+    height:100%;
+}
+h1{
+    color:#03ff36;
+    text-align: center;
+    margin: 100px auto 50px;
+    font-family: sans-serif;
+}
+h2{
+    color:#ffffff;
+    text-align: center;
+    margin: 100px auto 50px;
+    font-family: sans-serif;
+}
+h3{
+    color:#ff0000;
+    text-align: center;
+    margin: 100px auto 50px;
+    font-family: sans-serif;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 30%;
+    overflow: hidden;
+}
+.card{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    perspective: 1000px;
+    cursor: pointer;
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-align: center;
+    border-radius: 10px;
+    transition:1s;
+    transform-style: preserve-3d;
+}
+.card-front, .card-back,.card-front2,.card-front3{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card-front{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./Naruto.gif);
+    background-position: center;
+    background-size: cover;
+    animation: change 15s infinite ease-in-out;
+}
+span{
+    display: inline-block;
+    background: none;
+    width: 100px;
+    padding: 14px;
+    margin-top: 160px;
+    border-radius: 4px;
+    color: rgb(255, 0, 0);
+    transition: 1s;
+    animation: ok 1s infinite ease-in;
+}
+.card-back{
+    background-color:rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    transform: rotateY(-180deg);
+}
+.card:hover .inner-box{
+    transform: rotateY(-180deg);
+}
+.card:hover span{
+    transform: translateY(140px);
+}
+@keyframes change {
+    10%{
+        background-image: url(./A.jpgh.jpg);
+    }
+    20%{
+        background-image: url(./bb.jpg);
+    }
+    30%{
+        background-image: url(./c.jpg);
+    }
+    40%{
+        background-image: url(./dd.jpg);
+    }
+    50%{
+        background-image: url(./fm.jpg);
+    }
+    60%{
+        background-image: url(./GOT.jpg);
+    }
+    70%{
+        background-image: url(./M.jpg);
+    }
+    80%{
+        background-image: url(./sg.jpg);
+    }
+    90%{
+        background-image: url(./TBjpg.jpg);
+    }
+    100%{
+        background-image: url(./WD.jpg);
+    }
+}
+@keyframes ok{
+    20%{
+        color: aqua;
+    }
+    40%{
+        color: aquamarine;
+    }
+    60%{
+        color:black;
+    }
+    80%{
+        color:blue;
+    }
+    100%{
+        color:bisque;
+    }
+}
+.card-front2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./o5.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: change2 15s infinite ease-in-out;
+}
+@keyframes change2 {
+    10%{
+        background-image: url(./51tVfRQpXLL._AC_UF894\,1000_QL80_.jpg);
+    }
+    20%{
+        background-image: url(./images.jpeg);
+    }
+    30%{
+        background-image: url(./infinity.jpg);
+    }
+    40%{
+        background-image: url(./M_A.jpg);
+    }
+    50%{
+        background-image: url(./M_AV.jpg);
+    }
+    60%{
+        background-image: url(./MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_.jpg);
+    }
+    70%{
+        background-image: url(./spider.jpg);
+    }
+    80%{
+        background-image: url(./STAR.jpg);
+    }
+    90%{
+        background-image: url(./Titanic_\(1997_film\)_poster.png);
+    }
+    100%{
+        background-image: url(./omsp4herqf.webp);
+    }
+}
+.card-front3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./r\ \(7\).jpg);
+    background-position: center;
+    background-size: cover;
+    animation: change3 15s infinite ease-in-out;
+}
+@keyframes change3 {
+    10%{
+        background-image: url(./cowboy-bebop-entry-image.avif);
+    }
+    20%{
+        background-image: url(./5-Jojo---s-Bizarre-Adventure-Golden-Wind.avif);
+    }
+    30%{
+        background-image: url(./fire-breathing.avif);
+    }
+    40%{
+        background-image: url(./fullmetal-alchemist-brotherhood.avif);
+    }
+    50%{
+        background-image: url(./ligh-and-book.avif);
+    }
+    60%{
+        background-image: url(./Naruto-2.avif);
+    }
+    70%{
+        background-image: url(./Neon-Genesis-Evangelion.avif);
+    }
+    80%{
+        background-image: url(./One-Piece---Wano-Arc-Luffy-Charging-Up-A-Big-Punch.avif);
+    }
+    90%{
+        background-image: url(./pokemon-lucky-shiny-find.avif);
+    }
+    100%{
+        background-image: url(./The-main-cast-of-Dragon-Ball-Z.avif);
+    }
+}
